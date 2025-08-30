@@ -5,3 +5,4 @@ up.bat
 data/users.json
 data/tasks.json
 uploads/
+.env
