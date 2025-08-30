@@ -1,0 +1,7 @@
+node_modules/
+auth.env
+up.sh
+up.bat
+data/users.json
+data/tasks.json
+uploads/
