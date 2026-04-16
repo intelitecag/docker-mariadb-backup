@@ -36,6 +36,6 @@ RUN chmod +x /usr/local/bin/entrypoint.sh /usr/local/bin/backup.sh && \
 VOLUME ["/backup"]
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-  CMD pgrep crond >/dev/null || exit 1
+  CMD pgrep -f "crond -f" >/dev/null || exit 1
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

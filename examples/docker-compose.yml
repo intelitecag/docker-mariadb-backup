@@ -48,7 +48,7 @@ services:
     networks:
       - backup-net
     healthcheck:
-      test: ["CMD-SHELL", "pgrep crond >/dev/null || exit 1"]
+      test: ["CMD-SHELL", "pgrep -f 'crond -f' >/dev/null || exit 1"]
       interval: 30s
       timeout: 5s
       retries: 3
