@@ -2,7 +2,7 @@ FROM alpine:3.20
 
 LABEL org.opencontainers.image.title="docker-mariadb-backup" \
       org.opencontainers.image.description="Wiederverwendbarer Sidecar Container fuer automatisierte MariaDB Backups" \
-      org.opencontainers.image.source="https://github.com/intelitec/docker-mariadb-backup" \
+      org.opencontainers.image.source="https://github.com/intelitecag/docker-mariadb-backup" \
       org.opencontainers.image.vendor="Intelitec AG" \
       org.opencontainers.image.licenses="MIT"
 

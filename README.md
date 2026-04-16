@@ -1,8 +1,8 @@
 # docker-mariadb-backup
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/intelitec/docker-mariadb-backup/build.yml?branch=main)](https://github.com/intelitec/docker-mariadb-backup/actions/workflows/build.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/intelitecag/docker-mariadb-backup/build.yml?branch=main)](https://github.com/intelitecag/docker-mariadb-backup/actions/workflows/build.yml)
 [![Lizenz](https://img.shields.io/github/license/intelitec/docker-mariadb-backup)](LICENSE)
-[![GHCR Pulls](https://img.shields.io/badge/GHCR-Pulls-blue)](https://ghcr.io/intelitec/docker-mariadb-backup)
+[![GHCR Pulls](https://img.shields.io/badge/GHCR-Pulls-blue)](https://ghcr.io/intelitecag/docker-mariadb-backup)
 
 ## Uebersicht
 
@@ -27,7 +27,7 @@ services:
       MARIADB_ROOT_PASSWORD: supersecret
 
   mariadb-backup:
-    image: ghcr.io/intelitec/docker-mariadb-backup:latest
+    image: ghcr.io/intelitecag/docker-mariadb-backup:latest
     environment:
       MARIADB_HOST: mariadb
       MARIADB_USER: root

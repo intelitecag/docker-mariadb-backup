@@ -40,7 +40,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/intelitec/docker-mariadb-backup
+          images: ghcr.io/intelitecag/docker-mariadb-backup
           tags: |
             type=ref,event=branch
             type=ref,event=pr
