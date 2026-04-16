@@ -8,6 +8,8 @@ services:
     environment:
       # MariaDB Root Passwort fuer das Beispiel
       MARIADB_ROOT_PASSWORD: supersecret
+      # Root darf sich fuer dieses Beispiel von jedem Host anmelden
+      MARIADB_ROOT_HOST: "%"
       MARIADB_DATABASE: appdb
       TZ: Europe/Zurich
     volumes:

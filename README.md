@@ -25,6 +25,7 @@ services:
     image: mariadb:11.4
     environment:
       MARIADB_ROOT_PASSWORD: supersecret
+      MARIADB_ROOT_HOST: "%"
 
   mariadb-backup:
     image: ghcr.io/intelitecag/docker-mariadb-backup:latest

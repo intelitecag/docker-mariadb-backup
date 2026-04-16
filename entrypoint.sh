@@ -42,5 +42,6 @@ else
     fi
 fi
 
-log_info "Starte crond im Vordergrund."
-exec crond -f -l 8
+log_info "Starte BusyBox crond im Vordergrund."
+# BusyBox crond ist in restriktiven Runtime Profilen robuster als dcron.
+exec busybox crond -f -l 8 -L "${LOG_FILE}"
